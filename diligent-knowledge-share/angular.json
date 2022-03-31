@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "projects": {
+    "api": "apps/api",
+    "api-interfaces": "libs/api-interfaces",
+    "full-stack-angular-nest": "apps/full-stack-angular-nest",
+    "full-stack-angular-nest-e2e": "apps/full-stack-angular-nest-e2e"
+  }
+}
