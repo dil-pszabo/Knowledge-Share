@@ -1,24 +1,24 @@
 {
   "projectType": "application",
-  "root": "apps/full-stack-angular-nest",
-  "sourceRoot": "apps/full-stack-angular-nest/src",
-  "prefix": "diligent-knowledge-share",
+  "root": "apps/web-angular",
+  "sourceRoot": "apps/web-angular/src",
+  "prefix": "diligent-nx-knowledge-share",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/full-stack-angular-nest",
-        "index": "apps/full-stack-angular-nest/src/index.html",
-        "main": "apps/full-stack-angular-nest/src/main.ts",
-        "polyfills": "apps/full-stack-angular-nest/src/polyfills.ts",
-        "tsConfig": "apps/full-stack-angular-nest/tsconfig.app.json",
+        "outputPath": "dist/apps/web-angular",
+        "index": "apps/web-angular/src/index.html",
+        "main": "apps/web-angular/src/main.ts",
+        "polyfills": "apps/web-angular/src/polyfills.ts",
+        "tsConfig": "apps/web-angular/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
-          "apps/full-stack-angular-nest/src/favicon.ico",
-          "apps/full-stack-angular-nest/src/assets"
+          "apps/web-angular/src/favicon.ico",
+          "apps/web-angular/src/assets"
         ],
-        "styles": ["apps/full-stack-angular-nest/src/styles.scss"],
+        "styles": ["apps/web-angular/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -37,8 +37,8 @@
           ],
           "fileReplacements": [
             {
-              "replace": "apps/full-stack-angular-nest/src/environments/environment.ts",
-              "with": "apps/full-stack-angular-nest/src/environments/environment.prod.ts"
+              "replace": "apps/web-angular/src/environments/environment.ts",
+              "with": "apps/web-angular/src/environments/environment.prod.ts"
             }
           ],
           "outputHashing": "all"
@@ -58,37 +58,37 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "full-stack-angular-nest:build:production"
+          "browserTarget": "web-angular:build:production"
         },
         "development": {
-          "browserTarget": "full-stack-angular-nest:build:development"
+          "browserTarget": "web-angular:build:development"
         }
       },
       "defaultConfiguration": "development",
       "options": {
-        "proxyConfig": "apps/full-stack-angular-nest/proxy.conf.json"
+        "proxyConfig": "apps/web-angular/proxy.conf.json"
       }
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "full-stack-angular-nest:build"
+        "browserTarget": "web-angular:build"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "apps/full-stack-angular-nest/src/**/*.ts",
-          "apps/full-stack-angular-nest/src/**/*.html"
+          "apps/web-angular/src/**/*.ts",
+          "apps/web-angular/src/**/*.html"
         ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/full-stack-angular-nest"],
+      "outputs": ["coverage/apps/web-angular"],
       "options": {
-        "jestConfig": "apps/full-stack-angular-nest/jest.config.js",
+        "jestConfig": "apps/web-angular/jest.config.js",
         "passWithNoTests": true
       }
     }

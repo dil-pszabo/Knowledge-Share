@@ -1,6 +1,6 @@
 import { getGreeting } from '../support/app.po';
 
-describe('full-stack-angular-nest', () => {
+describe('web-angular', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {
@@ -8,6 +8,6 @@ describe('full-stack-angular-nest', () => {
     cy.login('my-email@something.com', 'myPassword');
 
     // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome full-stack-angular-nest');
+    getGreeting().contains('Welcome web-angular');
   });
 });

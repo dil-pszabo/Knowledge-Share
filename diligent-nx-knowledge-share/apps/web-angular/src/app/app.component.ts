@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Message } from '@diligent-knowledge-share/api-interfaces';
+import { Message } from '@diligent-nx-knowledge-share/api-interfaces';
 
 @Component({
-  selector: 'diligent-knowledge-share-root',
+  selector: 'diligent-nx-knowledge-share-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@diligent-knowledge-share/api-interfaces": [
+      "@diligent-nx-knowledge-share/api-interfaces": [
         "libs/api-interfaces/src/index.ts"
       ]
     }

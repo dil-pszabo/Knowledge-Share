@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 
-import { Message } from '@diligent-knowledge-share/api-interfaces';
+import { Message } from '@diligent-nx-knowledge-share/api-interfaces';
 
 import { AppService } from './app.service';
 

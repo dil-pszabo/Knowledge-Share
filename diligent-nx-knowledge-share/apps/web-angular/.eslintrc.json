@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "diligent-knowledge-share",
+            "prefix": "diligent-nx-knowledge-share",
             "style": "kebab-case"
           }
         ]

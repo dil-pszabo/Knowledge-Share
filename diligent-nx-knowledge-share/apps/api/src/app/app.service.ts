@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Message } from '@diligent-knowledge-share/api-interfaces';
+import { Message } from '@diligent-nx-knowledge-share/api-interfaces';
 
 @Injectable()
 export class AppService {
