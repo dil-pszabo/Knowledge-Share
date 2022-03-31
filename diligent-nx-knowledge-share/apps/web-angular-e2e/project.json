@@ -23,6 +23,6 @@
       }
     }
   },
-  "tags": [],
+  "tags": ["scope:web-angular", "type:app"],
   "implicitDependencies": ["web-angular"]
 }
