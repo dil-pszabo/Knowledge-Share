@@ -22,6 +22,9 @@
       "@diligent-nx-knowledge-share/xplat/core": [
         "libs/xplat/core/src/index.ts"
       ],
+      "@diligent-nx-knowledge-share/xplat/environments": [
+        "libs/xplat/core/src/lib/environments/base/index.ts"
+      ],
       "@diligent-nx-knowledge-share/xplat/features": [
         "libs/xplat/features/src/index.ts"
       ],
@@ -36,9 +39,6 @@
       ],
       "@diligent-nx-knowledge-share/xplat/utils": [
         "libs/xplat/utils/src/index.ts"
-      ],
-      "@diligent-nx-knowledge-share/xplat/environments": [
-        "libs/xplat/core/src/lib/environments/base/index.ts"
       ]
     }
   },

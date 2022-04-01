@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "angular",
-        "nx"
+        "nx",
+        "xplat"
     ]
 }
