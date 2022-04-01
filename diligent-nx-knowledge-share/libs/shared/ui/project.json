@@ -6,9 +6,7 @@
   "targets": {
     "build": {
       "executor": "@nrwl/angular:package",
-      "outputs": [
-        "dist/libs/shared/ui"
-      ],
+      "outputs": ["dist/libs/shared/ui"],
       "options": {
         "project": "libs/shared/ui/ng-package.json",
         "tailwindConfig": "libs/shared/ui/tailwind.config.js"
@@ -25,9 +23,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/libs/shared/ui"
-      ],
+      "outputs": ["coverage/libs/shared/ui"],
       "options": {
         "jestConfig": "libs/shared/ui/jest.config.js",
         "passWithNoTests": true
@@ -43,8 +39,5 @@
       }
     }
   },
-  "tags": [
-    "scope:shared",
-    "type:ui"
-  ]
+  "tags": ["scope:shared", "type:ui"]
 }

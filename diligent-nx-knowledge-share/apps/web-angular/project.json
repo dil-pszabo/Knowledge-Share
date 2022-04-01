@@ -6,9 +6,7 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/web-angular",
         "index": "apps/web-angular/src/index.html",
@@ -20,9 +18,7 @@
           "apps/web-angular/src/favicon.ico",
           "apps/web-angular/src/assets"
         ],
-        "styles": [
-          "apps/web-angular/src/styles.scss"
-        ],
+        "styles": ["apps/web-angular/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -90,17 +86,12 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/apps/web-angular"
-      ],
+      "outputs": ["coverage/apps/web-angular"],
       "options": {
         "jestConfig": "apps/web-angular/jest.config.js",
         "passWithNoTests": true
       }
     }
   },
-  "tags": [
-    "scope:web-angular",
-    "type:app"
-  ]
+  "tags": ["scope:web-angular", "type:app"]
 }

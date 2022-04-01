@@ -1,0 +1,101 @@
+{
+  "projectType": "application",
+  "root": "apps/web-xplat-angular",
+  "sourceRoot": "apps/web-xplat-angular/src",
+  "prefix": "diligent-nx-knowledge-share",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/apps/web-xplat-angular",
+        "index": "apps/web-xplat-angular/src/index.html",
+        "main": "apps/web-xplat-angular/src/main.ts",
+        "polyfills": "apps/web-xplat-angular/src/polyfills.ts",
+        "tsConfig": "apps/web-xplat-angular/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "apps/web-xplat-angular/src/favicon.ico",
+          "apps/web-xplat-angular/src/assets"
+        ],
+        "styles": [
+          "libs/xplat/web/scss/src/_index.scss",
+          "apps/web-xplat-angular/src/styles.scss"
+        ],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/web-xplat-angular/src/environments/environment.ts",
+              "with": "apps/web-xplat-angular/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "web-xplat-angular:build:production"
+        },
+        "development": {
+          "browserTarget": "web-xplat-angular:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "web-xplat-angular:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/web-xplat-angular/src/**/*.ts",
+          "apps/web-xplat-angular/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/apps/web-xplat-angular"
+      ],
+      "options": {
+        "jestConfig": "apps/web-xplat-angular/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

@@ -39,6 +39,12 @@
       ],
       "@diligent-nx-knowledge-share/xplat/utils": [
         "libs/xplat/utils/src/index.ts"
+      ],
+      "@diligent-nx-knowledge-share/xplat/web/core": [
+        "libs/xplat/web/core/src/index.ts"
+      ],
+      "@diligent-nx-knowledge-share/xplat/web/features": [
+        "libs/xplat/web/features/src/index.ts"
       ]
     }
   },
