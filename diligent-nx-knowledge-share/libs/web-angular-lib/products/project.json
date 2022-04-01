@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/web-angular-lib/products",
+  "sourceRoot": "libs/web-angular-lib/products/src",
+  "prefix": "diligent-nx-knowledge-share",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/web-angular-lib/products"],
+      "options": {
+        "jestConfig": "libs/web-angular-lib/products/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/web-angular-lib/products/src/**/*.ts",
+          "libs/web-angular-lib/products/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

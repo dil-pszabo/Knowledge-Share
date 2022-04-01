@@ -5,6 +5,7 @@
     "api-interfaces": "libs/api-interfaces",
     "shared-ui": "libs/shared/ui",
     "web-angular": "apps/web-angular",
-    "web-angular-e2e": "apps/web-angular-e2e"
+    "web-angular-e2e": "apps/web-angular-e2e",
+    "web-angular-lib-products": "libs/web-angular-lib/products"
   }
 }

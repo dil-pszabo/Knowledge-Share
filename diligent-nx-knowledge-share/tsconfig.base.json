@@ -18,6 +18,9 @@
       "@dil-ks/ui": ["libs/shared/ui/src/index.ts"],
       "@diligent-nx-knowledge-share/api-interfaces": [
         "libs/api-interfaces/src/index.ts"
+      ],
+      "@diligent-nx-knowledge-share/web-angular-lib/products": [
+        "libs/web-angular-lib/products/src/index.ts"
       ]
     }
   },
