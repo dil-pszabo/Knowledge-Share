@@ -18,6 +18,27 @@
       "@dil-ks/ui": ["libs/shared/ui/src/index.ts"],
       "@diligent-nx-knowledge-share/api-interfaces": [
         "libs/api-interfaces/src/index.ts"
+      ],
+      "@diligent-nx-knowledge-share/xplat/core": [
+        "libs/xplat/core/src/index.ts"
+      ],
+      "@diligent-nx-knowledge-share/xplat/features": [
+        "libs/xplat/features/src/index.ts"
+      ],
+      "@diligent-nx-knowledge-share/xplat/nativescript/core": [
+        "libs/xplat/nativescript/core/src/index.ts"
+      ],
+      "@diligent-nx-knowledge-share/xplat/nativescript/features": [
+        "libs/xplat/nativescript/features/src/index.ts"
+      ],
+      "@diligent-nx-knowledge-share/xplat/nativescript/utils": [
+        "libs/xplat/nativescript/utils/src/index.ts"
+      ],
+      "@diligent-nx-knowledge-share/xplat/utils": [
+        "libs/xplat/utils/src/index.ts"
+      ],
+      "@diligent-nx-knowledge-share/xplat/environments": [
+        "libs/xplat/core/src/lib/environments/base/index.ts"
       ]
     }
   },
